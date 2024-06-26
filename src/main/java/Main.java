@@ -8,7 +8,9 @@ import java.util.Scanner;
 import java.util.ArrayList;
 public class Main {
 public static void main(String[] args) {
-
+//Create dynamic array to hold student names
+ArrayList<String> students = new ArrayList<>();
+  
   
     
   }
