@@ -9,9 +9,10 @@ import java.util.ArrayList;
 public class Main {
 public static void main(String[] args) {
 //Create dynamic array to hold student names
-
+ArrayList<String> students = new ArrayList<>();
 Scanner scan = new Scanner(System.in);
 
+//Construct student roster
 System.out.println("Student Roster");
 System.out.println(""); 
   
@@ -23,6 +24,11 @@ int studentNum = 1;
     studentNum++;
   } while (!name.equals("x"));
 
+  scan.close();
+
+  
+
+  
 
 }
     //System.out.println(nums_arr[3]);
