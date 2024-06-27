@@ -39,17 +39,75 @@ System.out.println(studentRemoved + " has been removed.");
 
 System.out.println();
 
-System.out.println("Student grades for exam 1:");
-ArrayList<Integer> grades_exam1 = new ArrayList<>();
+//Exam 1 
+System.out.println("Student scores for Exam 1:");
+ArrayList<Integer> exam1 = new ArrayList<>();
   
 for (String student : students) {
   System.out.print(student + ": ");
     int grade = scan.nextInt();
     scan.nextLine(); 
-    grades_exam1.add(grade);
+    exam1.add(grade);
 }
 
-  
+//System.out.println(exam1); 
+
+//Average score for Exam 1
+float sum = 0;
+  for (int grade : exam1) {
+    sum += grade;
+  }
+
+  float average = sum / exam1.size();
+  System.out.println("Exam 1 Average: " + average);
+
+//Exam 2
+System.out.println();
+
+System.out.println("Student scores for Exam 2:");
+ArrayList<Integer> exam2 = new ArrayList<>();
+
+for (String student : students) {
+  System.out.print(student + ": ");
+    int grade = scan.nextInt();
+    scan.nextLine(); 
+    exam2.add(grade);
+  }
+
+  //System.out.println(grades_exam1); 
+
+  //Average score for Exam 1
+float sum2 = 0;
+  for (int grade : exam2) {
+    sum2 += grade;
+  }
+
+  float average2 = sum2 / exam2.size();
+  System.out.println("Exam 2 Average: " + average);
+
+//Exam 3
+System.out.println();
+
+System.out.println("Student scores for Exam 3:");
+ArrayList<Integer> exam3 = new ArrayList<>();
+
+for (String student : students) {
+  System.out.print(student + ": ");
+    int grade = scan.nextInt();
+    scan.nextLine(); 
+    exam3.add(grade);
+  }
+
+//System.out.println(grades_exam1); 
+
+//Average score for Exam 1
+  float sum3 = 0;
+    for (int grade : exam3) {
+      sum3 += grade;
+    }
+
+    float average3 = sum3 / exam3.size();
+    System.out.println("Exam 2 Average: " + average);
   /*
   System.out.println("");
   System.out.print(items[0] + ": ");
