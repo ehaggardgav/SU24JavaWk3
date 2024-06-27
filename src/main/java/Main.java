@@ -31,7 +31,11 @@ int studentNum = 1;
   //print command was a check to see that the array was created properly, and can now be commented out, does not need to be executed in the console
   //System.out.println(students);
 
+String studentRemoved = students.remove(2);
+//System.out.println(students);
 
+System.out.println();
+System.out.println(studentRemoved + " has been removed.");
 
   
 
