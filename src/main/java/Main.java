@@ -21,10 +21,23 @@ int studentNum = 1;
   do {
     System.out.print("Student" + studentNum + ": ");
     name = scan.nextLine();
+    if (!name.equals("x")){
+      students.add(name);
+    }
+    
     studentNum++;
   } while (!name.equals("x"));
 
-  scan.close();
+  //print command was a check to see that the array was created properly, and can now be commented out, does not need to be executed in the console
+  //System.out.println(students);
+
+
+
+  
+
+
+
+
 
   
 
