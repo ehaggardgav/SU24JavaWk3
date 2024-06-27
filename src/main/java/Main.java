@@ -31,19 +31,8 @@ int studentNum = 1;
   //print command was a check to see that the array was created properly, and can now be commented out, does not need to be executed in the console
 //System.out.println(students);
 
-//while-loop to prevent an error if the roster input is less than 3 students (student 2 will be remove)
-while (students.size() < 2) {
-    System.out.println("You need at least 2 students. Please add more students.");
-    do {
-        System.out.print("Student " + studentNum + ": ");
-        name = scan.nextLine();
-          if (!name.equals("x")) {
-              students.add(name);
-              studentNum++;
-          }
-      } while (!name.equals("x"));
-  }
-
+//allows user to input name of the student to remove, and returns a prompt if the student's name is not on the roster
+  System.out.println();
   String studentToRemove;
   while (true) {
       System.out.print("Enter name of the student to remove: ");
@@ -91,21 +80,21 @@ ArrayList<Integer> exam2 = new ArrayList<>();
 
 for (String student : students) {
   System.out.print(student + ": ");
-    int grade = scan.nextInt();
+    int grade2 = scan.nextInt();
     scan.nextLine(); 
-    exam2.add(grade);
+    exam2.add(grade2);
   }
 
-  //System.out.println(grades_exam1); 
+  //System.out.println(grades_exam2); 
 
-  //Average score for Exam 1
+  //Average score for Exam 2
 float sum2 = 0;
-  for (int grade : exam2) {
-    sum2 += grade;
+  for (int grade2 : exam2) {
+    sum2 += grade2;
   }
 
   float average2 = sum2 / exam2.size();
-  System.out.println("Exam 2 Average: " + average);
+  System.out.println("Exam 2 Average: " + average2);
 
 //Exam 3
 System.out.println();
@@ -115,21 +104,21 @@ ArrayList<Integer> exam3 = new ArrayList<>();
 
 for (String student : students) {
   System.out.print(student + ": ");
-    int grade = scan.nextInt();
+    int grade3 = scan.nextInt();
     scan.nextLine(); 
-    exam3.add(grade);
+    exam3.add(grade3);
   }
 
-//System.out.println(grades_exam1); 
+//System.out.println(grades_exam3); 
 
-//Average score for Exam 1
+//Average score for Exam 3
   float sum3 = 0;
-    for (int grade : exam3) {
-      sum3 += grade;
+    for (int grade3 : exam3) {
+      sum3 += grade3;
     }
 
     float average3 = sum3 / exam3.size();
-    System.out.println("Exam 3 Average: " + average);
+    System.out.println("Exam 3 Average: " + average3);
 
 //Final Averages
 ArrayList<Float> finals = new ArrayList<>();
