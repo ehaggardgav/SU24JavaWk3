@@ -37,8 +37,25 @@ String studentRemoved = students.remove(2);
 System.out.println();
 System.out.println(studentRemoved + " has been removed.");
 
-  
+System.out.println();
 
+System.out.println("Student grades for exam 1:");
+ArrayList<Integer> grades_exam1 = new ArrayList<>();
+  
+for (String student : students) {
+  System.out.print(student + ": ");
+    int grade = scan.nextInt();
+    scan.nextLine(); 
+    grades_exam1.add(grade);
+}
+
+  
+  /*
+  System.out.println("");
+  System.out.print(items[0] + ": ");
+  Integer quantity1 = scan.nextInt();
+        scan.nextLine();
+*/
 
 
 
