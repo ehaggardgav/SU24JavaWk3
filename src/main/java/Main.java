@@ -44,12 +44,20 @@ while (students.size() < 2) {
       } while (!name.equals("x"));
   }
 
-String studentRemoved = students.remove(2);
+  String studentToRemove;
+  while (true) {
+      System.out.print("Enter name of the student to remove: ");
+      studentToRemove = scan.nextLine();
+      if (students.contains(studentToRemove)) {
+          break;
+      } else {
+          System.out.println("Student not found. Please try again.");
+      }
+  }
 
-//System.out.println(students);
-
-System.out.println();
-System.out.println(studentRemoved + " has been removed.");
+  // Remove the student with the specified name and print their name
+students.remove(studentToRemove);
+System.out.println(studentToRemove + " has been removed.");
 
 System.out.println();
 
