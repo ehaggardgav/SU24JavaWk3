@@ -29,9 +29,11 @@ int studentNum = 1;
   } while (!name.equals("x"));
 
   //print command was a check to see that the array was created properly, and can now be commented out, does not need to be executed in the console
-  //System.out.println(students);
+//System.out.println(students);
 
+//This command requires that there are at least three students in the roster:
 String studentRemoved = students.remove(2);
+
 //System.out.println(students);
 
 System.out.println();
@@ -107,13 +109,10 @@ for (String student : students) {
     }
 
     float average3 = sum3 / exam3.size();
-    System.out.println("Exam 2 Average: " + average);
-  /*
-  System.out.println("");
-  System.out.print(items[0] + ": ");
-  Integer quantity1 = scan.nextInt();
-        scan.nextLine();
-*/
+    System.out.println("Exam 3 Average: " + average);
+
+//Final Averages
+ArrayList<float> finals = new ArrayList<>();
 
 
 
