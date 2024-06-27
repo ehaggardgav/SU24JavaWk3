@@ -124,7 +124,7 @@ System.out.println("\nFinal Grades:");
 
 // Calculate and print average final grade
 float averageFinals = finalScore / students.size();
-System.out.println("\nFinal Average: ", + averageFinals);
+System.out.printf("\nFinal Average: %.1f\n", + averageFinals);
 
 
 
