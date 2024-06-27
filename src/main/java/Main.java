@@ -112,8 +112,19 @@ for (String student : students) {
     System.out.println("Exam 3 Average: " + average);
 
 //Final Averages
-ArrayList<float> finals = new ArrayList<>();
+ArrayList<Float> finals = new ArrayList<>();
+float finalScore = 0;
+System.out.println("\nFinal Grades:");
+  for (int i = 0; i < students.size(); i++) {
+    float finalGrades = (exam1.get(i) * 0.2f) + (exam2.get(i) * 0.3f) + (exam3.get(i) * 0.5f);
+        finals.add(finalGrades);
+        finalScore += finalGrades;
+        System.out.println(students.get(i) + ": " + finalGrades);
+    }
 
+// Calculate and print average final grade
+float averageFinals = finalScore / students.size();
+System.out.println("\nFinal Average: ", + averageFinals);
 
 
 
