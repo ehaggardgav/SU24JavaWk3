@@ -31,7 +31,19 @@ int studentNum = 1;
   //print command was a check to see that the array was created properly, and can now be commented out, does not need to be executed in the console
 //System.out.println(students);
 
-//This command requires that there are at least three students in the roster:
+//while-loop to prevent an error if the roster input is less than 3 students (student 2 will be remove)
+while (students.size() < 2) {
+    System.out.println("You need at least 2 students. Please add more students.");
+    do {
+        System.out.print("Student " + studentNum + ": ");
+        name = scan.nextLine();
+          if (!name.equals("x")) {
+              students.add(name);
+              studentNum++;
+          }
+      } while (!name.equals("x"));
+  }
+
 String studentRemoved = students.remove(2);
 
 //System.out.println(students);
